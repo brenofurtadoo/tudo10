@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tudo10 — Tudo por R$10</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="logo">
+    <img src="images/logo.png" alt="TUDO10 LOGO">
+</a>
+
+        <div class="search">
+            <input 
+                type="text" 
+                placeholder="O que você está procurando?"
+            >
+        </div>
+
+        <button class="cart-button">
+            🛒 <span id="cart-count">0</span>
+        </button>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+            <p class="hero-small">PRATICIDADE NO SEU DIA A DIA</p>
+
+            <h1>
+                Tudo por
+                <span>R$10</span>
+            </h1>
+
+            <p>
+                Encontre o que você precisa de forma simples,
+                rápida e sem complicação.
+            </p>
+
+            <button class="hero-button">
+                Explorar produtos
+            </button>
+        </section>
+
+
+        <section class="categories">
+
+            <h2>Encontre por categoria</h2>
+
+            <div class="category-list">
+
+    <button class="category-button active" data-categoria="Todos">
+        Todos
+    </button>
+
+    <button class="category-button" data-categoria="Casa">
+        Casa
+    </button>
+
+    <button class="category-button" data-categoria="Cozinha">
+        Cozinha
+    </button>
+
+    <button class="category-button" data-categoria="Organização">
+        Organização
+    </button>
+
+    <button class="category-button" data-categoria="Decoração">
+        Decoração
+    </button>
+
+    <button class="category-button" data-categoria="Limpeza">
+        Limpeza
+    </button>
+
+    <button class="category-button" data-categoria="Ferramentas">
+        Ferramentas
+    </button>
+
+    <button class="category-button" data-categoria="Papelaria & Artesanato">
+        Papelaria & Artesanato
+    </button>
+
+</div>
+
+        </section>
+
+
+        <section class="products">
+
+            <div class="section-title">
+                <div>
+                    <p>CONFIRA NOSSA SELEÇÃO</p>
+                    <h2>Mais procurados</h2>
+                </div>
+            </div>
+
+            <div id="product-list" class="product-list">
+                <!-- Os produtos serão inseridos pelo JavaScript -->
+            </div>
+
+        </section>
+
+    </main>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+<aside id="cart" class="cart">
+
+    <div class="cart-header">
+        <div>
+            <p>SEU PEDIDO</p>
+            <h2>Carrinho</h2>
+        </div>
+
+        <button id="close-cart" class="close-cart">
+            ×
+        </button>
+    </div>
+
+    <div id="cart-items" class="cart-items">
+        <p class="empty-cart">
+            Seu carrinho está vazio.
+        </p>
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cart-total">
+                R$ 0,00
+            </strong>
+        </div>
+
+        <button class="checkout-button">
+            Finalizar pedido
+        </button>
+
+    </div>
+
+</aside>
+    <div id="checkout-overlay" class="checkout-overlay">
+
+    <section class="checkout">
+
+        <div class="checkout-header">
+            <div>
+                <p>QUASE LÁ</p>
+                <h2>Revise seu pedido</h2>
+            </div>
+
+            <button id="close-checkout" class="close-checkout">
+                ×
+            </button>
+        </div>
+
+        <div id="checkout-items" class="checkout-items">
+            <!-- Produtos serão inseridos pelo JavaScript -->
+        </div>
+
+        <div class="checkout-summary">
+
+            <div>
+                <span>Total</span>
+
+                <strong id="checkout-total">
+                    R$ 0,00
+                </strong>
+            </div>
+
+            <button id="back-to-cart" class="back-button">
+                ← Voltar ao carrinho
+            </button>
+
+            <button id="whatsapp-button" class="whatsapp-button">
+                Finalizar pelo WhatsApp
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
