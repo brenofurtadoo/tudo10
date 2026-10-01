@@ -3,13 +3,14 @@ const produtos = [
         nome: "Pano multiuso",
         categoria: "Limpeza",
         preco: 10,
-        imagem: "pano-multiuso.jpeg"
+        imagem: "pano-multiuso.png"
     },
     {
-        nome: "Jarra de plástico",
+        nome: "Kit canecas",
         categoria: "Cozinha",
         preco: 10,
-        imagem: "jarra-plastico.jpeg"
+        imagem: "jarra-plastico.jpeg",
+        observacao: "6 unidades por R$10"
     },
     {
         nome: "Vaso de flor",
@@ -46,7 +47,8 @@ const produtos = [
         nome: "Pano de microfibra",
         categoria: "Limpeza",
         preco: 10,
-        imagem: "pano-microfibra.jpeg"
+        imagem: "pano-microfibra.jpeg",
+        observacao: "2 unidades por R$10"
     },
     {
         nome: "Conjunto de pincéis",
